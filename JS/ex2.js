@@ -1,0 +1,10 @@
+const a = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+//console.log(a);
+const odd = a.filter(x => x % 2 != 0);
+console.log(odd);
+const div1 = a.filter(y => y % 2 === 0 || y % 5 == 0);
+console.log(div1);
+const three = (a.filter(z => z % 3 === 0).map(z => z * z));
+console.log(three);
+const u = (a.filter(z => z % 5 === 0).map(z => z * z)).reduce((acc, val) => acc + val, 0);
+console.log(u);
